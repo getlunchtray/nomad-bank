@@ -20,7 +20,7 @@ I built this over about an hour or so. Therefore you need to know a little codin
 
 Conversion rates are as of 26/08/2016. Therefore, this is not live pinging a currency site like XE.com.
 
-So if you're using a voilitle currency like the British Pound (ZING!) you may either want to use something else of fork this to ping another service. I may add this later, but for now I really didn't have enough time. 
+So if you're using a volatile currency like the British Pound (ZING!) you may either want to use something else of fork this to ping another service. I may add this later, but for now I really didn't have enough time. 
 
 ### How to use this
 
