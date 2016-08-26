@@ -4,7 +4,7 @@ chrome.extension.sendMessage({}, function(response) {
 		clearInterval(readyStateCheckInterval);
 		var path = location.href.split( '/' )[2];
 		var bankSettings = config[path];
-		if(bankSettings){
+		if(bankSettings && bankSettings["original_currency"] !== convertTo){
 			$.each($(bankSettings["balance_element"]), function(index, element){
 				var currencyOnly = $(element).html().replace(/[^\d.-]/g, '');
 				var currencyAsFloat = parseFloat(currencyOnly);
