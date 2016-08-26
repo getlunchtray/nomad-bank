@@ -2,6 +2,10 @@
 
 This is a basic chrome extension that I made to help me understand how much money I have in my bank account based on the local currency.
 
+![Alt text](./conversionexample.png?raw=true "Conversion Example")
+
+At the moment I've only been able to implement this for the banks and currencies I have access to. The good news is, it's super easy to implement for other banks. 
+
 Right now it can handle the following banks and currencies:
 
 ##### Banks
