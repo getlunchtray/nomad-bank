@@ -4,19 +4,22 @@ This is a basic chrome extension that I made to help me understand how much mone
 
 ![Alt text](./conversionexample.png?raw=true "Conversion Example")
 
-At the moment I've only been able to implement this for the banks and currencies I have access to. The good news is, it's super easy to implement for other banks. 
+At the moment I've only been able to implement this for the banks and currencies I have access to. The good news is, it's super easy to implement for other banks.
 
 Right now it can handle the following banks and currencies:
 
 ##### Banks
 * ScotiaBank (Canada)
 * Charles Schwab Bank (USA)
+* Barclays (USA)
 
 ##### Currencies
 * Canadian Dollars <> Euros
 * Canadian Dollars <> Bulgarian Lev
+* Canadian Dollars <> US Dollars
 * US Dollars <> Euros
 * US Dollars <> Bulgarian Lev
+* Bulgarian Lev <> Euros
 
 ### A few caveats
 
@@ -24,7 +27,7 @@ I built this over about an hour or so. Therefore you need to know a little codin
 
 Conversion rates are as of 26/08/2016. Therefore, this is not live pinging a currency site like XE.com.
 
-So if you're using a volatile currency like the British Pound (ZING!) you may either want to use something else of fork this to ping another service. I may add this later, but for now I really didn't have enough time. 
+So if you're using a volatile currency like the British Pound (ZING!) you may either want to use something else of fork this to ping another service. I may add this later, but for now I really didn't have enough time.
 
 ### How to use this
 
@@ -38,7 +41,7 @@ Otherwise, open the `config.js` and find the portion for banks and add the bank 
       original_currency: "cad",
       balance_element: ".balance .number"
     }
-    
+
 `Hash Key` everything after `https://` until the next `/`
 
 `original_currency`: Original currency should be the lowercase form of **[ISO 427](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)**
@@ -67,6 +70,6 @@ Download/Fork & Download
 
 Please feel free to fork the repo and add the details for your bank. The more banks we have in here, the better it gets!
 
-This was lightly thrown together to get something I needed, done. 
+This was lightly thrown together to get something I needed, done.
 
 Though I will do my best to scan this for any icky things, this extension is strictly as-is, use at your own risk.
