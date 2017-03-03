@@ -42,7 +42,7 @@ Otherwise, open the `config.js` and find the portion for banks and add the bank 
       balance_element: ".balance .number"
     }
 
-`Hash Key` everything after `https://` until the next `/`
+`Object Key` everything after `https://` until the next `/`
 
 `original_currency`: Original currency should be the lowercase form of **[ISO 427](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)**
 
